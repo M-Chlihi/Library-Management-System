@@ -1,6 +1,5 @@
 # Library Management System in C
 
-![C Language](https://img.shields.io/badge/Language-C-blue) ![License MIT](https://img.shields.io/badge/License-MIT-green) ![GitHub Repo](https://img.shields.io/badge/Repo-M-Chlihi-orange)
 
 A **console-based library management system** written in C that allows users to manage books: adding, deleting, searching, sorting, borrowing, and returning them. It also supports persistent storage with a file.
 
@@ -121,13 +120,3 @@ ISBN: 1234567890
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
 ---
-
-## 🔗 GitHub Profile
-
-Check out more projects at [M-Chlihi](https://github.com/M-Chlihi)
-
----
-
-If you want, I can **also add a GitHub-style badge for build/compile status and make the README fully color-coded with emojis** so it stands out even more.
-
-Do you want me to do that?
