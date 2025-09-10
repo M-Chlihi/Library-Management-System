@@ -31,6 +31,9 @@ void toUpperCase(char *str);
 
 int main(){
 Book *library = NULL;  // pointer to dynamic array
+
+printf("** Welcome in your Library **\n");
+printf("\n");
 int bookCount = loadFromFile(&library, "library.txt");
   
 int choice;
