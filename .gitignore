@@ -1,0 +1,8 @@
+*.exe
+*.out
+*.o
+library
+main
+libary
+.vscode/
+tempCodeRunnerFile.c
