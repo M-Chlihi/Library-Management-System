@@ -1,4 +1,4 @@
-Library Management System (C Project)
+**Library Management System (C Project)**
 
 A menu-driven Library Management System in C that allows users to add, display, search, delete, borrow, and return books.
 This project helped me practice structs, dynamic memory allocation, file handling, and sorting algorithms.
