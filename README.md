@@ -1,62 +1,61 @@
-**Library Management System (C Project)**
+# 📚 Library Management System (C Project)
 
-A menu-driven Library Management System in C that allows users to add, display, search, delete, borrow, and return books.
-This project helped me practice structs, dynamic memory allocation, file handling, and sorting algorithms.
+A **menu-driven Library Management System in C** that allows users to add, display, search, delete, borrow, and return books.
+This project helped me practice **structs, dynamic memory allocation, file handling, and sorting algorithms**.
 
-🚀 Features
+---
 
-➕ Add Book – Add new books with title, author, ISBN, and year
+## 🚀 Features
 
-📖 Display Books – Show all stored books in the library
+* ➕ **Add Book** – Add new books with title, author, ISBN, and year
+* 📖 **Display Books** – Show all stored books in the library
+* 🔍 **Search Book** – Search by title or author
+* 🗑 **Delete Book** – Remove a book by ISBN
+* 🔄 **Sort Books** – Sort by title or author using `qsort()`
+* 📤 **Borrow Book** – Mark a book as borrowed
+* 📥 **Return Book** – Mark a borrowed book as returned
+* 💾 **Save/Load Data** – Automatically save and reload books from file
 
-🔍 Search Book – Search by title or author
+---
 
-🗑 Delete Book – Remove a book by ISBN
+## 🛠 Technologies & Concepts
 
-🔄 Sort Books – Sort by title or author using qsort()
+* **Language:** C
+* **Concepts practiced:**
 
-📤 Borrow Book – Mark a book as borrowed
+  * `struct` to represent books
+  * **Dynamic memory allocation** (`malloc`, `realloc`, `free`)
+  * **File I/O** for saving and loading books
+  * **String handling** (`strcmp`, `strtok`, `strcpy`)
+  * **Sorting** with `qsort()`
+  * **Menu-driven program design**
 
-📥 Return Book – Mark a borrowed book as returned
+---
 
-💾 Save/Load Data – Automatically save and reload books from file
+## 📦 Installation & Usage
 
-🛠 Technologies & Concepts
+1. Clone the repo:
 
-Language: C
+   ```bash
+   git clone https://github.com/<your-username>/library-management-system.git
+   ```
+2. Compile:
 
-Concepts practiced:
+   ```bash
+   gcc library.c -o library
+   ```
+3. Run:
 
-struct to represent books
+   ```bash
+   ./library
+   ```
 
-Dynamic memory allocation (malloc, realloc, free)
+---
 
-File I/O for saving and loading books
+## 📸 Example Run
 
-String handling (strcmp, strtok, strcpy)
-
-Sorting with qsort()
-
-Menu-driven program design
-
-📦 Installation & Usage
-
-Clone the repo:
-
-git clone https://github.com/<your-username>/library-management-system.git
-
-
-Compile:
-
-gcc library.c -o library
-
-
-Run:
-
-./library
-
-📸 Example Run
- Welcome in your Library:
+```text
+** Welcome in your Library **
 
 1. Add Book
 2. Display Books
@@ -72,7 +71,29 @@ Enter author name: Dennis Ritchie
 Enter publication year: 1978
 Enter ISBN: 12345
 Book added successfully!
+```
 
-📜 License
+---
+
+## 📚 What I Learned
+
+* How to **build a complete system in C**
+* Working with **dynamic arrays and memory management**
+* Using **file handling** to persist data
+* Implementing **borrowing/returning logic** with flags (`isBorrowed`)
+* How to structure a **modular and menu-driven program**
+
+---
+
+## 🔮 Future Improvements
+
+* Add user authentication (e.g., librarian vs reader)
+* Track due dates for borrowed books
+* Save data in CSV/JSON format instead of plain text
+* GUI version using C++ or Python
+
+
+
+## 📜 License
+
 MIT License – free to use, modify, and share.
-
