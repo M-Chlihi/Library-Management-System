@@ -1,60 +1,85 @@
-# 📚 Library Management System (C Project)
+# Library Management System in C
 
-A **menu-driven Library Management System in C** that allows users to add, display, search, delete, borrow, and return books.
-This project helped me practice **structs, dynamic memory allocation, file handling, and sorting algorithms**.
+![C Language](https://img.shields.io/badge/Language-C-blue) ![License MIT](https://img.shields.io/badge/License-MIT-green) ![GitHub Repo](https://img.shields.io/badge/Repo-M-Chlihi-orange)
+
+A **console-based library management system** written in C that allows users to manage books: adding, deleting, searching, sorting, borrowing, and returning them. It also supports persistent storage with a file.
+
+
+## 📝 Features
+
+*  **Add Book** – Input book title, author, publication year, and ISBN.
+*  **Display Books** – View all books in your library.
+*  **Search Book** – Search books by title or author.
+*  **Delete Book** – Remove a book by its ISBN.
+*  **Sort Books** – Sort books alphabetically by title or author.
+*  **Borrow & Return** – Track borrowed books.
+*  **Persistent Storage** – Save/load library data to/from `library.txt`.
 
 ---
 
-## 🚀 Features
-
-* ➕ **Add Book** – Add new books with title, author, ISBN, and year
-* 📖 **Display Books** – Show all stored books in the library
-* 🔍 **Search Book** – Search by title or author
-* 🗑 **Delete Book** – Remove a book by ISBN
-* 🔄 **Sort Books** – Sort by title or author using `qsort()`
-* 📤 **Borrow Book** – Mark a book as borrowed
-* 📥 **Return Book** – Mark a borrowed book as returned
-* 💾 **Save/Load Data** – Automatically save and reload books from file
-
----
-
-## 🛠 Technologies & Concepts
+## 💻 Technologies Used
 
 * **Language:** C
-* **Concepts practiced:**
-
-  * `struct` to represent books
-  * **Dynamic memory allocation** (`malloc`, `realloc`, `free`)
-  * **File I/O** for saving and loading books
-  * **String handling** (`strcmp`, `strtok`, `strcpy`)
-  * **Sorting** with `qsort()`
-  * **Menu-driven program design**
+* **Compiler:** GCC / Clang / Visual Studio
+* **OS:** Windows (fully compatible; partially portable to Linux/Mac)
 
 ---
 
-## 📦 Installation & Usage
+## 🚀 Getting Started
 
-1. Clone the repo:
+### 1. Clone the Repository
 
-   ```bash
-   git clone https://github.com/<your-username>/library-management-system.git
-   ```
-2. Compile:
+```bash
+git clone https://github.com/M-Chlihi/library-management-c.git
+cd library-management-c
+```
 
-   ```bash
-   gcc library.c -o library
-   ```
-3. Run:
+### 2. Compile the Program
 
-   ```bash
-   ./library
-   ```
+```bash
+gcc main.c -o library.exe
+```
+
+### 3. Run the Program
+
+```bash
+./library.exe   # Linux/Mac
+library.exe     # Windows
+```
 
 ---
 
-## 📸 Example Run
+## 📂 File Storage
 
-```text
+* Books are stored in `library.txt` with the format:
+
+```
+Title;Author;ISBN;Year
+```
+
+* Data is automatically loaded at startup if the file exists.
+* Changes are saved when selecting **Save & Exit**.
+
+---
+
+## ⚙️ Functions Overview
+
+* `addBook()` – Add a book.
+* `displayBooks()` – Show all books.
+* `searchBook()` – Search by title/author.
+* `deleteBook()` – Delete by ISBN.
+* `sortBooks()` – Sort books alphabetically.
+* `borrowBook()` / `returnBook()` – Borrow and return books.
+* `saveToFile()` / `loadFromFile()` – Save/load library data.
+* Utility: `trim()`, `toUpperCase()`, `compareByTitle()`, `compareByAuthor()`.
+
+---
+
+## 🔍 Screenshots
+
+**Library Menu:**
+
+```
 ** Welcome in your Library **
 
 1. Add Book
@@ -65,35 +90,44 @@ This project helped me practice **structs, dynamic memory allocation, file handl
 6. Borrow Book
 7. Return Book
 8. Save & Exit
-Enter your choice: 1
-Enter book title: C Programming
-Enter author name: Dennis Ritchie
-Enter publication year: 1978
-Enter ISBN: 12345
-Book added successfully!
+Enter your choice:
+```
+
+**Displaying Books:**
+
+```
+📚 Library Collection (3 books):
+--------------------------------------
+Book #1
+Title: C Programming
+Author: Dennis Ritchie
+Year: 1978
+ISBN: 1234567890
+--------------------------------------
 ```
 
 ---
 
-## 📚 What I Learned
+## 📌 Notes
 
-* How to **build a complete system in C**
-* Working with **dynamic arrays and memory management**
-* Using **file handling** to persist data
-* Implementing **borrowing/returning logic** with flags (`isBorrowed`)
-* How to structure a **modular and menu-driven program**
+* ISBN serves as a unique identifier.
+* Dynamic memory allocation allows flexible library size.
+* Borrowed books are tracked with a boolean flag.
 
 ---
 
-## 🔮 Future Improvements
-
-* Add user authentication (e.g., librarian vs reader)
-* Track due dates for borrowed books
-* Save data in CSV/JSON format instead of plain text
-* GUI version using C++ or Python
-
-
-
 ## 📜 License
 
-MIT License – free to use, modify, and share.
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
+---
+
+## 🔗 GitHub Profile
+
+Check out more projects at [M-Chlihi](https://github.com/M-Chlihi)
+
+---
+
+If you want, I can **also add a GitHub-style badge for build/compile status and make the README fully color-coded with emojis** so it stands out even more.
+
+Do you want me to do that?
