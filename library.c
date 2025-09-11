@@ -113,10 +113,10 @@ void addBook(Book **library, int *bookCount) {
 
 void displayBooks(Book *library,int bookCount){
         if (bookCount == 0) {
-        printf("\n📚 Your library is empty.\n\n");
+        printf("\n Your library is empty.\n\n");
         return;
     }
-    printf("\n📚 Library Collection (%d books):\n", bookCount);
+    printf("\n Library Collection (%d books):\n", bookCount);
     printf("--------------------------------------\n");
 
     for (int i = 0; i < bookCount; i++)
@@ -134,7 +134,7 @@ void displayBooks(Book *library,int bookCount){
 
 void  searchBook(Book *library,int  bookCount, char *query){
     if (bookCount == 0) {
-        printf("\n📚 Your library is empty.\n\n");
+        printf("\n Your library is empty.\n\n");
         return;
     }
     int found = 0;
@@ -160,7 +160,7 @@ printf(" No books found matching your search!... ");
 
 void deleteBook(Book **library, int *bookCount, char *isbn) {
     if (*bookCount == 0) {
-        printf("\n📚 Your library is empty.\n\n");
+        printf("\n Your library is empty.\n\n");
         return;
     }
 
